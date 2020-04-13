@@ -1,1 +1,129 @@
-Hello  Worls
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Calculator</title>
+        <style>
+        	*{
+            	margin:0; padding:0;
+            }
+            
+            .Calculator-outline{
+            	width:100vw;
+                height:100vh;
+            	background-color:aqua;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            
+            .calculator-box{
+            	width:55vw;
+                height:95vh;
+                background-color:red;
+                display:grid;
+                grid-template-rows: 20% 30% auto;  
+                grid-row-gap: 10px;
+                padding:10px;
+                border-radius:5px;
+
+            }
+            
+            .calculator-box-header{
+            	border-radius:5px;
+            	background-color:blue;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                
+            }
+            
+             .cal-name{
+             	width:94%;
+                height:80%;
+                background-color:black;
+                color:white;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:50px;
+                text-transform:uppercase;
+                
+             }
+            
+            .calculator-box-body{
+            	border-radius:5px;
+            	background-color:pink;
+            }
+            
+            .calculator-box-footer{
+            	display:grid;
+                grid-template-columns: auto auto auto auto;
+			    grid-template-rows: auto auto auto auto;
+            	border-radius:5px;
+            	background-color:white;
+                padding: 10px;
+                /*grid-column-gap: 10px;
+			    grid-row-gap: 10px;*/
+                background-color:lightgreen;
+                
+
+            }
+            
+            .calculator-box-footer div{
+            	 
+                background-color:lightgrey;
+                display: flex;
+    			justify-content: center;
+    			align-items: center;
+                font-weight:800;
+                border:1px solid white;
+                cursor:pointer;   
+            }
+            
+            .calculator-box-footer div:hover{
+            background-color:white;
+            }
+            
+            .calculator-box-footer div.symbol:hover {
+            background-color:grey;
+            }
+            
+            .calculator-box-footer div.symbol-dark:hover {
+            background-color:red;
+            }
+        </style>
+    </head>
+<body>
+	<div class="Calculator-outline">
+    	<div class="calculator-box">
+        <div class="calculator-box-header">
+        	<div class="cal-name">calculator</div>
+        </div>
+        <div class="calculator-box-body"></div>
+        <div class="calculator-box-footer">
+        	<div class="symbol"><span>C</span></div>
+            <div class="symbol"><span>AC</span></div>
+            <div class="symbol"><span>%</span></div>
+            <div class="symbol"><span>/</span></div>
+            <div><span>7</span></div>
+            <div><span>8</span></div>
+            <div><span>9</span></div>
+            <div class="symbol"><span>x</span></div>
+            <div><span>4</span></div>
+            <div style="background-color:orange"><span>5</span></div>
+            <div><span>6</span></div>
+            <div class="symbol"><span>+</span></div>
+            <div><span>1</span></div>
+            <div><span>2</span></div>
+            <div><span>3</span></div>
+            <div class="symbol"><span>-</span></div>
+            <div><span>0</span></div>
+            <div><span>00</span></div>
+            <div><span>.</span></div>
+            <div class="symbol-dark"><span>=</span></div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
